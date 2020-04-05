@@ -1,0 +1,32 @@
+{
+  "name": "captain_feelgood_reject_it_backend",
+  "version": "1.0.0",
+  "description": "Reject it legal service backend",
+  "main": "server.js",
+  "author": "Nikita Melentjevs",
+  "license": "",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^1.3.2",
+    "express-rate-limit": "^5.0.0",
+    "helmet": "^3.21.2",
+    "hpp": "^0.2.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.7",
+    "node-xlsx": "^0.15.0",
+    "nodemailer": "^6.3.1",
+    "uuidv4": "^6.0.7",
+    "voucher-code-generator": "^1.1.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4"
+  }
+}

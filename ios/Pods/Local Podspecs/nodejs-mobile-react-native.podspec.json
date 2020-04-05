@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-mobile-react-native",
+  "version": "0.5.0",
+  "summary": "Node.js for Mobile Apps React Native plugin",
+  "license": "MIT",
+  "source": {
+    "git": "https://github.com/JaneaSystems/nodejs-mobile-react-native.git",
+    "tag": "v#{s.version}"
+  },
+  "authors": {
+    "name": "janeasystems"
+  },
+  "homepage": "https://code.janeasystems.com/nodejs-mobile",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ios/*.{h,m,mm,hpp,cpp}",
+  "compiler_flags": "-I$(PODS_TARGET_SRCROOT)/ios/libnode/include/node/",
+  "pod_target_xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "gnu++0x",
+    "ENABLE_BITCODE": "NO"
+  },
+  "user_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
+  "ios": {
+    "vendored_frameworks": "ios/NodeMobile.framework"
+  },
+  "static_framework": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}
